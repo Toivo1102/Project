@@ -2,7 +2,7 @@ package org.itstep.qa.cyclesTwo;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainThree {
     public static void main(String[] args) {
     /*Составьте программу для ввода с консоли имени и возраста человека
     и вывода на консоль строки вида: "Ваше имя Имя,  Вам лет NN лет"

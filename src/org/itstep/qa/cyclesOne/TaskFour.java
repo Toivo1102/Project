@@ -12,7 +12,7 @@ public class TaskFour {
         System.out.println("Введите целые числа");
         int n;
         int x;
-        int b = 1;
+        long b = 1;
         n = scanner.nextInt();
         x = scanner.nextInt();
 

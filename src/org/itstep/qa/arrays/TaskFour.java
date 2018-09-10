@@ -1,23 +1,34 @@
 package org.itstep.qa.arrays;
 
-import java.util.Random;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class TaskFour {
-    /*
-    Задача 3
-    Найти среднее арифметическое из значений массива из задачи 1
-     */
     public static void main(String[] args) {
         int[] array;
         array = new int[10];
-        double result = 0;
-        Random random = new Random();  // объявление класса Random
+        Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(150); // заполнение массива случайными числами
+            do {
+                System.out.println("Введите только целое число");
+                if (scanner.hasNextInt()) {
+                    array[i] = scanner.nextInt();
+                    break;
+                } else {
+                    System.out.println("Это не число. Попробуйте еще раз");
+                    scanner.next();
+                }
+            } while (true);
         }
+        System.out.println("В итоге получился массив");
+        System.out.println(Arrays.toString(array));
+
+        int temp = 0;
         for (int i = 0; i < array.length; i++) {
-            result = result + array[i];
+            if (array[i] == 0) {
+                temp ++;
+            }
         }
-        System.out.println(result / array.length);
+        System.out.println("Количество нулевых элементов равно " + temp);
     }
 }

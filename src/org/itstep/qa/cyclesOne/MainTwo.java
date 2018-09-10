@@ -2,7 +2,7 @@ package org.itstep.qa.cyclesOne;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainTwo {
     public static void main(String[] args) {
         /* Задача 1
         При помощи цикла for вывести на экран нечетные числа от 1 до 99.

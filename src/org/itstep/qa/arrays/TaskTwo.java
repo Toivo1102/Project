@@ -1,54 +1,23 @@
 package org.itstep.qa.arrays;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
 
 public class TaskTwo {
-    /* Задача 2
-   Объявить массив целых чисел длиной 10 элементов.
-Ввести значения для элементов массива с клавиатуры.
-Вывести массив на экран.
-Повышенной сложности: сделать проверку правильности
-ввода элемента типа Integer, если элемент введен неправильно – дать
-возможность повторить его ввод.
-    */
+    /*
+    Задача 3
+    Найти среднее арифметическое из значений массива из задачи 1
+     */
     public static void main(String[] args) {
         int[] array;
         array = new int[10];
-        Scanner scanner = new Scanner(System.in);
+        double result = 0;
+        Random random = new Random();  // объявление класса Random
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Введите только целое число");
-            if (scanner.hasNextInt()) {
-                array[i] = scanner.nextInt();
-
-            } else {
-                System.out.println("Это не число. Попробуйте еще раз");
-                scanner.nextLine();
-            }
+            array[i] = random.nextInt(150); // заполнение массива случайными числами
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+            result = result + array[i];
         }
+        System.out.println(result / array.length);
     }
-
-
 }
-
-
-
-/*
-System.out.println("Введите целое и только число");
-        int inputValue = 0;
-        while (true) {     // реализация бесконечного цикла
-        if (scanner.hasNextInt()) {
-        inputValue = scanner.nextInt();
-        break;
-        } else {
-        System.out.println("Это не число. Попробуйте еще раз");
-        scanner.nextLine();
-        }
-        }
-        System.out.println("Итоговый результат " + inputValue);
-        */
