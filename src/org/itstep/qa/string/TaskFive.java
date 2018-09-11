@@ -12,7 +12,7 @@ public class TaskFive {
                 if (Character.isLowerCase(letter)) {
                     System.out.println(Character.toUpperCase(letter));
                 } else {
-                    Character.toLowerCase(letter);
+                     System.out.println(Character.toLowerCase(letter));
                 }
 
             } else System.out.println("Значение не является латинской буквой");
