@@ -7,7 +7,7 @@ public class TaskThree {
     Можно использовать метод contains).
 
      */
-    String first = "Мама не мыла";
+    String first = "Мама мыла";
     String second = "Мама мыла раму";
         if (second.contains(first))
         {
