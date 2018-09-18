@@ -36,7 +36,7 @@ public class TaskThree {
             }
 
             default: {
-                System.out.println("Информации по этой валюте нет");
+                System.out.println("Информации по курсу этой валюты нет");
             }
         }
     }

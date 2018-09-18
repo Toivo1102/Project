@@ -12,9 +12,9 @@ public class TaskEight {
         String line;
         System.out.println("Введите любую строку текста");
         line = scanner.nextLine();
-        String[] result = line.split(" ");
+        String[] result = line.split(" +");
         System.out.println(result);
-        int test = 1;
+        int test = 0;
         for (int i = 0; i < result.length; i++) {
             if (result[i].length() >= test) {
                 test = result[i].length();

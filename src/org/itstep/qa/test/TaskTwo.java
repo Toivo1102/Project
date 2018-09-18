@@ -4,12 +4,28 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class TaskTwo {
+
     /*
     Составить программу, которая проверяет знание
     таблицы умножения и сообщает пользователю результат (верно или нет).
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int result;
+        for (int i = 1; i< 10; i++){
+            for (int j = 1; j < 10; j++) {
+                System.out.println("Введите результат " +
+                        "произведения чисел " + i + " и " + j);
+                result = scanner.nextInt();
+                if (result == i*j) {
+                    System.out.println("Угадали");
+                } else {
+                    System.out.println("Не угадали");
+                }
+            }
+
+        }
+      /*  Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int randomNumber;
         randomNumber = random.nextInt(10);
@@ -75,6 +91,7 @@ public class TaskTwo {
                 }
             }
         }
-
+*/
     }
+
 }

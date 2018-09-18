@@ -37,6 +37,46 @@ public class TaskNine {
             System.out.println();
         }
 
+        //  максимальный элемент
+
+        int max = Integer.MIN_VALUE, indexI = 0, indexJ = 0;
+        for (int i = 0; i < arrayOne.length; i++) {
+            for (int j = 0; j < arrayOne[0].length; j++) {
+                if (arrayOne[i][j] > max) {
+                    max = arrayOne[i][j];
+                    indexI = i;
+                    indexJ = j;
+                }
+            }
+        }
+
+        System.out.println("Максимальное значение = " + max);
+        System.out.println("Индекс i = " + indexI);
+        System.out.println("Индекс j = " + indexJ);
+
+        if (indexI == 0) {
+            System.out.println("Соседа сверху нет");
+        } else {
+            System.out.println("Сосед сверху " + arrayOne[indexI - 1][indexJ]);
+        }
+        if (indexI == arrayOne.length - 1) {
+            System.out.println("Соседа снизу нет");
+        } else {
+            System.out.println("Сосед снизу " + arrayOne[indexI + 1][indexJ]);
+        }
+
+        if (indexJ == 0) {
+            System.out.println("Соседа слева нет");
+        } else {
+            System.out.println("Сосед слева " + arrayOne[indexI][indexJ - 1]);
+        }
+        if (indexJ == arrayOne.length - 1) {
+            System.out.println("Соседа справа нет");
+        } else {
+            System.out.println("Сосед справа " + arrayOne[indexI][indexJ + 1]);
+        }
+    }
+        /*
         int max = arrayOne[0][0];
         int a = 0;
         int b = 0;
@@ -86,9 +126,9 @@ public class TaskNine {
         System.out.println(down);
         System.out.println(left);
         System.out.println(right);
-
-    }
-
+*/
 }
+
+
 
 

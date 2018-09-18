@@ -14,7 +14,7 @@ public class TaskFive {
         arrayOne = new int[5][5][5];
         for (int i = 0; i < arrayOne.length; i++) {
             for (int j = 0; j < arrayOne[i].length; j++)
-                for (int c = 0; c < arrayOne[i].length; c++) {
+                for (int c = 0; c < arrayOne[i][j].length; c++) {
                     arrayOne[i][j][c] = random.nextInt(300);
                 }
         }

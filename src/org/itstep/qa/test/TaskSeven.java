@@ -19,9 +19,7 @@ public class TaskSeven {
         System.out.println("Введите контрольное слово");
         controlWorld = scanner.next();
 
-        String[] res = line.split(" ");
-
-        if (Arrays.asList(res).contains("мыла")) {
+        if (controlWorld.contains("мыла")) {
             System.out.println("Контрольное слово есть в строке текста");
         } else {
             System.out.println("Контрольного слова нет в строке текста");
