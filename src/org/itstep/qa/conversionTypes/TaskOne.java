@@ -14,7 +14,7 @@ public class TaskOne {
         month = scanner.next();
         switch (month) {      // можно использовать только int byte string
             case "февраль": {   // в строках необходимо соблюдать регистр
-                System.out.println("Количесвто дней в месяце - 28");
+                System.out.println("Количество дней в месяце - 28");
                 break;
             }
             case "март": {
